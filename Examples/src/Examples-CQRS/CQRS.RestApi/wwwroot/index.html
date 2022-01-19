@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Simplest possible thing</title>
+  <link href="css/site.css" rel="stylesheet" />
+  <link href="fontawesome/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+</head>
+<body>
+  <header>
+    <div class="content-wrapper">
+      <div class="float-left">
+        <p class="site-title">
+          <a href="">Simplest Possible Thingie</a>
+        </p>
+      </div>
+    </div>
+  </header>
+  <div id="body">
+    <section class="featured"></section>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/inventory-item.js"></script>
+
+    <section class="content-wrapper main-content clear-fix">
+      <div ng-app="cqrsSample">
+        <div ng-view></div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

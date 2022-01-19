@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03E509FF-E9F0-4DDE-8ECA-2D5EA62E06EA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CQRS.WCF</RootNamespace>
+    <AssemblyName>CQRS.WCF</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Concurrency\IConcurrencyAware.cs" />
+    <Compile Include="Features\InventoryItem\CheckInItemsToInventoryCommand.cs" />
+    <Compile Include="Features\InventoryItem\CreateInventoryItemCommand.cs" />
+    <Compile Include="Features\InventoryItem\DeactivateInventoryItemCommand.cs" />
+    <Compile Include="Features\InventoryItem\RemoveItemsFromInventoryCommand.cs" />
+    <Compile Include="Features\InventoryItem\RenameInventoryItemCommand.cs" />
+    <Compile Include="Infrastructure\Dispatcher\QueryRequest.cs" />
+    <Compile Include="Infrastructure\Dispatcher\QueryResponse.cs" />
+    <Compile Include="Infrastructure\AsDynamicExtension.cs" />
+    <Compile Include="Infrastructure\Dispatcher\CommandTypeProvider.cs" />
+    <Compile Include="Infrastructure\Dispatcher\QueryTypeProvider.cs" />
+    <Compile Include="Infrastructure\IQueryHandler.cs" />
+    <Compile Include="MyRegistry.cs" />
+    <Compile Include="Infrastructure\Dispatcher\IDispatcher.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="Infrastructure\Dispatcher\Dispatcher.cs" />
+    <Compile Include="Infrastructure\Ioc\StructureMapServiceHost.cs" />
+    <Compile Include="Infrastructure\Ioc\StructureMapServiceBehavior.cs" />
+    <Compile Include="Infrastructure\Ioc\StructureMapInstanceProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CQRS.Application\CQRS.Application.csproj">
+      <Project>{9a330490-caed-45c1-8677-e85a9c9f29fd}</Project>
+      <Name>CQRS.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CQRS.Domain\CQRS.Domain.csproj">
+      <Project>{5dac18c5-c95a-4fbe-9300-6f6ebe987bd5}</Project>
+      <Name>CQRS.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CQRS.Infrastructure\CQRS.Infrastructure.csproj">
+      <Project>{a25bf808-cd15-4ccb-9b65-253a601b9f47}</Project>
+      <Name>CQRS.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NETStandard.Library">
+      <Version>1.6.1</Version>
+    </PackageReference>
+    <PackageReference Include="StructureMap">
+      <Version>4.6.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

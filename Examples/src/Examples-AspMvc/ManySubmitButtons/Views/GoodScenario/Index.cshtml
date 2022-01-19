@@ -1,0 +1,33 @@
+﻿@using AspMvc.Infrastructure.HtmlHelpers
+@using AspMvc.Infrastructure.ManySubmitButtons
+@using ManySubmitButtons.Controllers
+@model ManySubmitButtons.Models.AddressModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="row">
+  <div class="col-md-8">
+    @using (Html.BeginActionForm())
+    {
+      <div class="form-group">
+        @Html.LabelFor(f => f.Line1, "Line")
+        @Html.TextBoxFor(f => f.Line1)
+      </div>
+      <div class="form-group">
+        @Html.LabelFor(f => f.Line2, "Line")
+        @Html.TextBoxFor(f => f.Line2)
+      </div>
+      <div class="form-group">
+        @Html.LabelFor(f => f.ZipCode, "ZipCode")
+        @Html.TextBoxFor(f => f.ZipCode)
+        @Html.TextBoxFor(f => f.Locality)
+      </div>
+      @(Html.SubmitActionButton<GoodScenarioController>(f => f.Ok(null), "Ok", new {@class = "btn btn-default"}))
+      @(Html.SubmitActionButton<GoodScenarioController>(f => f.Cancel(),"Cancel", new { @class = "btn" }))
+    }
+  </div>
+</div>

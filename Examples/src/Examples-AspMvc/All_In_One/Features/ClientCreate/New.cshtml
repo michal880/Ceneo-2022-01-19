@@ -1,0 +1,30 @@
+﻿@using All_In_One.Features.ClientCreate
+@using AspMvc.Infrastructure.AjaxValidation
+@using AspMvc.Infrastructure.FormExtensions
+
+@model All_In_One.Features.ClientCreate.Command.ClientCreateCommand
+<div class="row">
+  <div class="col-md-8">
+    @using (Html.BeginAjaxValidationForm<ClientCreateController>(f => f.Create(null)))
+    {
+      @Html.AntiForgeryToken()
+      <h4>Create new client.</h4>
+      <hr />
+      @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+      <div class="form-group">
+        <label class="col-md-2 control-label">Name</label>
+        <div class="col-md-10">
+          @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+          @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <input type="submit" value="OK" class="btn" />
+    }
+  </div>
+</div>
+
+@section scripts
+{
+  @Html.RenderAjaxValidationScript()
+}

@@ -1,0 +1,11 @@
+﻿@using SessionWrapper.Controllers
+@using Microsoft.Web.Mvc
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Home</h2>
+
+<p>@(Html.ActionLink<MySessionController>(f => f.SaveValueToSession(), "SaveValueToSession"))</p>
+<p>@(Html.ActionLink<MySessionController>(f=>f.ShowValueFromSession(),"ShowValueFromSession"))</p>

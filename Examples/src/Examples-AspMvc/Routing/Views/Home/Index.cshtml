@@ -1,0 +1,21 @@
+﻿@using ExamplesMVC5.Controllers._1Routing
+@using Microsoft.Web.Mvc
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Home</h2>
+
+<h4>RouteGebugger</h4>
+<p>Install-Package RouteDebugger</p>
+
+<h4>Glimpse </h4>
+<p>Install-Package Glimpse.MVC5</p>
+<a href="~/Glimpse.axd">Glimpse.axd</a>
+
+<h4>Get Rout Values</h4>
+@(Html.ActionLink<HomeController>
+  (f => f.GetDataFromRoutData(), "GetDataFromRoutData"))
+
+  <h4>Language, country in params</h4>
+  <a href="~/en-us/LanguageRoute/IndexByLanguage">Language in params</a>

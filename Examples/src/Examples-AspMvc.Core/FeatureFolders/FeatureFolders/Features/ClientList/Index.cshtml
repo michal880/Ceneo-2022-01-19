@@ -1,0 +1,20 @@
+﻿@{
+  ViewBag.Title = "Index";
+}
+@using FeatureFolders.Features.ClientAddWizard
+@model CRM.Areas.ClientList.Models.ClientListQuery
+<h2>Clients</h2>
+
+<table class="table table-bordered table-striped">
+  @{ int i = 1; }
+  @foreach (var client in Model.Clients)
+  {
+    <tr>
+      <td>@i</td>
+      <td>@client.Name</td>
+    </tr>
+    i++;
+  }
+</table>
+
+@(Html.ActionLink("Add client wizard", "New","ClientAddWizard", new { @class = "btn btn-default" }))

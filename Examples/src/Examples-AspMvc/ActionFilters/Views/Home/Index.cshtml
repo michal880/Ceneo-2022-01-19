@@ -1,0 +1,13 @@
+﻿@using ExamplesMVC5.Controllers.ActionFilters
+@using Microsoft.Web.Mvc
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Home</h2>
+
+<ul>
+  <li>@(Html.ActionLink<AjaxOnlyBadExampleController>(f => f.PageWithAjaxCall(), "AjaxOblyBadExample"))</li>
+  <li>@(Html.ActionLink<AjaxOnlyGoodExampleController>(f => f.PageWithAjaxCall(), "AjaxOblyGoodExample"))</li>
+
+</ul>

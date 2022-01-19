@@ -1,0 +1,23 @@
+﻿@using CommandPattern.Controllers
+@using Microsoft.Web.Mvc
+@{
+  ViewBag.Title = "Home Page";
+}
+
+<h2>Clients</h2>
+
+<table class="table table-bordered table-striped">
+  @{ int i = 1; }
+  @foreach (var client in Model.Clients)
+  {
+    <tr>
+      <td>@i</td>
+      <td>@client.Name</td>
+    </tr>
+    i++;
+  }
+</table>
+
+@(Html.ActionLink<ClientCreateNormalController>(f => f.New(), "New client (normal scenario)", new { @class = "btn btn-default" }))
+@(Html.ActionLink<ClientCreateCommandController>(f => f.New(), "New client (command scenario)", new {@class = "btn btn-default"}))
+@(Html.ActionLink<ClientCreateCommandDispatcherController>(f => f.New(), "New client (command dispatcher scenario)", new { @class = "btn btn-default" }))

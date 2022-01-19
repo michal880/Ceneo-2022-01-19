@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+</head>
+<body>
+  <script type="text/javascript">
+  $.ajax({
+    type: "POST",
+    url: "http://localhost:50297/Users/Create",
+    data: {
+      Name: "Crazy Dave",
+      Login: "CrazyDave",
+      Email: "test@test.com",
+      Description: "testDescription"
+    },
+    success: function() {}
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<AspMvcSec.Models.UserSummary>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Users</h2>
+@Html.ActionLink("Create user","Create",null, new { @class = "btn" })
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <td>Login</td>
+    <td>Name</td>
+    <td></td>
+  </tr>
+  </thead>
+  @foreach (var item in Model)
+  {
+    <tr>
+      <td>@item.Login</td>
+      <td>@item.Name</td>
+      <td>
+       @using (Html.BeginForm("Delete", "Users",FormMethod.Post))
+       {
+         <input type="hidden" name="id" value="@item.Id"/>
+         <input type="submit" value="Delete" class="btn"/>
+       }
+      </td>
+    </tr>
+  }
+</table>

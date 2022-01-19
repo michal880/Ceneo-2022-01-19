@@ -1,0 +1,21 @@
+﻿@using Microsoft.Web.Mvc
+@using OperationConfirmation.Controllers
+@{
+  ViewBag.Title = "Home Page";
+}
+
+<h2>Clients</h2>
+
+<table class="table table-bordered table-striped">
+  @{ int i = 1; }
+  @foreach (var client in Model.Clients)
+  {
+    <tr>
+      <td>@i</td>
+      <td>@client.Name</td>
+    </tr>
+    i++;
+  }
+</table>
+
+@(Html.ActionLink<ClientCreateController>(f => f.New(), "New client", new { @class = "btn btn-default" }))

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF.VerticalSlices", "WCF.VerticalSlices\WCF.VerticalSlices.csproj", "{03E509FF-E9F0-4DDE-8ECA-2D5EA62E06EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03E509FF-E9F0-4DDE-8ECA-2D5EA62E06EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03E509FF-E9F0-4DDE-8ECA-2D5EA62E06EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03E509FF-E9F0-4DDE-8ECA-2D5EA62E06EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03E509FF-E9F0-4DDE-8ECA-2D5EA62E06EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35A9F0A7-6960-49E1-AA04-9DC1E1668F33}
+	EndGlobalSection
+EndGlobal

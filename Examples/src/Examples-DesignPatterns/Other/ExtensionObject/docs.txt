@@ -1,0 +1,3 @@
+﻿http://www.mif.vu.lt/~plukas/resources/Extension%20Objects/ExtensionObjectsPattern%20Gamma96.pdf
+http://blogsprajeesh.blogspot.com/2008/10/using-extensible-object-pattern-to.html
+http://blogs.msdn.com/b/carlosfigueira/archive/2012/01/31/wcf-extensibility-iextension-and-iextensibleobject.aspx

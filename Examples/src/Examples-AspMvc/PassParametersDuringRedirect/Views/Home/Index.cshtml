@@ -1,0 +1,14 @@
+﻿@using PassParametersDuringRedirect.Controllers
+@using Microsoft.Web.Mvc;
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<h2>Home</h2>
+
+<ul>
+  <li>@(Html.ActionLink<BadExampleController>(f => f.Scenario1(), "Bad Scenario1"))</li>
+  <li>@(Html.ActionLink<BadExampleController>(f => f.Scenario2(), "Bad Scenario2"))</li>
+  <li>@(Html.ActionLink<GoodExampleController>(f => f.Scenario1(), "Good Scenario"))</li>
+  <li>@(Html.ActionLink<GoodExampleController>(f =>f.Scenario2_ValueTypes_though_QueryString(),"Good Scenario2_ValueTypes_though_QueryString"))</li>
+</ul>

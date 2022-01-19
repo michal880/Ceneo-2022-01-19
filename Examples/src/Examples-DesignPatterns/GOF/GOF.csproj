@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18DCB59D-A4B6-43D4-B4D3-7FAE2631462E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GOF</RootNamespace>
+    <AssemblyName>GOF</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behavioral\ChainOfResponsibility\Example1\AddNumber.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Example1\Chain.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Example1\MultiplyNumbers.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Example1\Numbers.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Example1\SubstractNumber.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Example1\_Test.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Example2\AddCommand.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Example2\AddCommandProcessor.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Example2\Command.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Example2\ProcessorBase.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Example2\RemoveCommand.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Example2\RemoveCommandProcessor.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Example2\Response.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Example2\_Test.cs" />
+    <Compile Include="Behavioral\Command\Example1\ICommand.cs" />
+    <Compile Include="Behavioral\Command\Example1\Light.cs" />
+    <Compile Include="Behavioral\Command\Example1\TurnOnCommand.cs" />
+    <Compile Include="Behavioral\Command\Example1\_Test.cs" />
+    <Compile Include="Behavioral\Interpreter\PolishNotationExample\Context.cs" />
+    <Compile Include="Behavioral\Interpreter\PolishNotationExample\IExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\PolishNotationExample\IntegerExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\PolishNotationExample\MinusExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\PolishNotationExample\Parser.cs" />
+    <Compile Include="Behavioral\Interpreter\PolishNotationExample\PlusExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\PolishNotationExample\_Test.cs" />
+    <Compile Include="Behavioral\Interpreter\RomanNumbersExample\AbstractExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\RomanNumbersExample\Context.cs" />
+    <Compile Include="Behavioral\Interpreter\RomanNumbersExample\HundredExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\RomanNumbersExample\IExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\RomanNumbersExample\OneExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\RomanNumbersExample\RomanDateParser.cs" />
+    <Compile Include="Behavioral\Interpreter\RomanNumbersExample\TenExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\RomanNumbersExample\ThousandExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\RomanNumbersExample\_Test.cs" />
+    <Compile Include="Behavioral\Memento\Exmaple1\EditorCtrl.cs" />
+    <Compile Include="Behavioral\Memento\Exmaple1\Memento.cs" />
+    <Compile Include="Behavioral\Memento\Exmaple1\NotepadApp.cs" />
+    <Compile Include="Behavioral\Memento\Exmaple1\_Test.cs" />
+    <Compile Include="Behavioral\Observer\Obserevr.cs" />
+    <Compile Include="Behavioral\State\Example2\IAtmMachine.cs" />
+    <Compile Include="Behavioral\State\Example2\Money.cs" />
+    <Compile Include="Behavioral\State\Example2\NoStateAtm\NoStateAtm.cs" />
+    <Compile Include="Behavioral\State\Example2\Pin.cs" />
+    <Compile Include="Behavioral\State\Example2\StateAtm\AtmStateMachine.cs" />
+    <Compile Include="Behavioral\State\Example2\StateAtm\IAtmMachineInternal.cs" />
+    <Compile Include="Behavioral\State\Example2\StateAtm\IAtmState.cs" />
+    <Compile Include="Behavioral\State\Example2\StateAtm\States\BaseState.cs" />
+    <Compile Include="Behavioral\State\Example2\StateAtm\States\CardInserted.cs" />
+    <Compile Include="Behavioral\State\Example2\StateAtm\States\CashWithdrawn.cs" />
+    <Compile Include="Behavioral\State\Example2\StateAtm\States\InitialState.cs" />
+    <Compile Include="Behavioral\State\Example2\StateAtm\States\PinEntered.cs" />
+    <Compile Include="Behavioral\State\Example2\_Test.cs" />
+    <Compile Include="Behavioral\TemplateMethod\Example1_Game\Chess.cs" />
+    <Compile Include="Behavioral\TemplateMethod\Example1_Game\Monopoly.cs" />
+    <Compile Include="Behavioral\TemplateMethod\Example1_Game\TurnBaseGame.cs" />
+    <Compile Include="Behavioral\Visitor\Example1\DoubleDispatchProblem.cs" />
+    <Compile Include="Behavioral\Visitor\Example2\Appels.cs" />
+    <Compile Include="Behavioral\Visitor\Example2\IVisitable.cs" />
+    <Compile Include="Behavioral\Visitor\Example2\IVisitor.cs" />
+    <Compile Include="Behavioral\Visitor\Example2\Milk.cs" />
+    <Compile Include="Behavioral\Visitor\Example2\TaxVisitor.cs" />
+    <Compile Include="Behavioral\Visitor\Example2\Vodka.cs" />
+    <Compile Include="Behavioral\Visitor\Example2\_Test.cs" />
+    <Compile Include="Creational\Builder\Example1\SqlTableScriptBuilder.cs" />
+    <Compile Include="Creational\Builder\Example1\_Test.cs" />
+    <Compile Include="Creational\Builder\Example2PizzaBuilder\PizzaBuilder.cs" />
+    <Compile Include="Creational\Builder\Example2PizzaBuilder\_Test.cs" />
+    <Compile Include="Creational\FactoryMethod\FrameworkExamples.cs" />
+    <Compile Include="Creational\Singleton\MySingleton.cs" />
+    <Compile Include="Creational\Singleton\MySingleton2.cs" />
+    <Compile Include="Creational\Singleton\_Test.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural\Adapter\ClassAdapter\ExternalPdfWriter.cs" />
+    <Compile Include="Structural\Adapter\ClassAdapter\ExternalPdfWriterAdapter.cs" />
+    <Compile Include="Structural\Adapter\ClassAdapter\IExporter.cs" />
+    <Compile Include="Structural\Adapter\ClassAdapter\Processor.cs" />
+    <Compile Include="Structural\Adapter\_Test.cs" />
+    <Compile Include="Structural\Adapter\ObjectAdapter\FileAdapter.cs" />
+    <Compile Include="Structural\Adapter\ObjectAdapter\ILogWriter.cs" />
+    <Compile Include="Structural\Adapter\ObjectAdapter\Level.cs" />
+    <Compile Include="Structural\Adapter\ObjectAdapter\Processor.cs" />
+    <Compile Include="Structural\Bridge\Example1Shapes\AsciiDriver.cs" />
+    <Compile Include="Structural\Bridge\Example1Shapes\Circle.cs" />
+    <Compile Include="Structural\Bridge\Example1Shapes\HdPixelDriver.cs" />
+    <Compile Include="Structural\Bridge\Example1Shapes\IDrawingApi.cs" />
+    <Compile Include="Structural\Bridge\Example1Shapes\MyLogo.cs" />
+    <Compile Include="Structural\Bridge\Example1Shapes\New3DDriver.cs" />
+    <Compile Include="Structural\Bridge\Example1Shapes\Shape.cs" />
+    <Compile Include="Structural\Bridge\Example1Shapes\Squre.cs" />
+    <Compile Include="Structural\Bridge\Example1Shapes\_Test.cs" />
+    <Compile Include="Structural\Bridge\Example2\IMessage.cs" />
+    <Compile Include="Structural\Bridge\Example2\IMessageSender.cs" />
+    <Compile Include="Structural\Bridge\Example2\NewCilentMessage.cs" />
+    <Compile Include="Structural\Bridge\Example2\NewLoginMessage.cs" />
+    <Compile Include="Structural\Bridge\Example2\WelCommeMessage.cs" />
+    <Compile Include="Structural\Bridge\Example2\_Test.cs" />
+    <Compile Include="Structural\Composite\Example1\A.cs" />
+    <Compile Include="Structural\Composite\Example1\Body.cs" />
+    <Compile Include="Structural\Composite\Example1\Div.cs" />
+    <Compile Include="Structural\Composite\Example1\Head.cs" />
+    <Compile Include="Structural\Composite\Example1\Html.cs" />
+    <Compile Include="Structural\Composite\Example1\INode.cs" />
+    <Compile Include="Structural\Composite\Example1\Node.cs" />
+    <Compile Include="Structural\Composite\Example1\_Test.cs" />
+    <Compile Include="Structural\Composite\Example2\Class1.cs" />
+    <Compile Include="Structural\Decorator\Example1\IPizza.cs" />
+    <Compile Include="Structural\Decorator\Example1\Mozzarella.cs" />
+    <Compile Include="Structural\Decorator\Example1\ThickPizza.cs" />
+    <Compile Include="Structural\Decorator\Example1\ThinPizza.cs" />
+    <Compile Include="Structural\Decorator\Example1\TomatoSouce.cs" />
+    <Compile Include="Structural\Decorator\Example1\_Test.cs" />
+    <Compile Include="Structural\Decorator\Example2\_Test.cs" />
+    <Compile Include="Structural\Proxy\Example1\Address.cs" />
+    <Compile Include="Structural\Proxy\Example1\Controller.cs" />
+    <Compile Include="Structural\Proxy\Example1\HttpListener.cs" />
+    <Compile Include="Structural\Proxy\Example1\IService.cs" />
+    <Compile Include="Structural\Proxy\Example1\Service.cs" />
+    <Compile Include="Structural\Proxy\Example1\ServiceProxy.cs" />
+    <Compile Include="Structural\Proxy\Example1\_Test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Structural\Bridge\Example1Shapes\ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

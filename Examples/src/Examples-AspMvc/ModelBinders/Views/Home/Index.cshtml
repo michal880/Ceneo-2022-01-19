@@ -1,0 +1,15 @@
+﻿@using Microsoft.Web.Mvc
+@using ModelBinders.Controllers
+
+@{
+  ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul>
+  <li>@(Html.ActionLink<PrincipalBadPracticeController>(f => f.BadExample1(), "BadExample1"))</li>
+  <li>@(Html.ActionLink<PrincipalBadPracticeController>(f => f.BadExample2(null), "BadExample2"))</li>
+
+  <li>@(Html.ActionLink<PrincipalGoodPracticeController>(f => f.Index(null), "GoodPractice"))</li>
+</ul>

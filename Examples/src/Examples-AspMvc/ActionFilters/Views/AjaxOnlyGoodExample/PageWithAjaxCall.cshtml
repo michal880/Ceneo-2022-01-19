@@ -1,0 +1,29 @@
+﻿@using ExamplesMVC5.Controllers.ActionFilters
+@using Microsoft.Web.Mvc
+
+@{
+    ViewBag.Title = "PageWithAjaxCall";
+}
+
+<h2>PageWithAjaxCall</h2>
+
+<div id="replaceMe">
+
+</div>
+
+@section scripts
+{
+<script>
+    $(document).ready(function() {
+      var url = '@(Html.BuildUrlFromExpression<AjaxOnlyGoodExampleController>(f => f.AjaxCall()))';
+
+      $.ajax({
+        type: "get",
+        url: url,
+        success: function(data) {
+          $("#replaceMe").html(data);
+        }
+      });
+    });
+</script>
+}

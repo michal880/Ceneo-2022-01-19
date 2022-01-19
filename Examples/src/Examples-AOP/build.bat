@@ -1,0 +1,2 @@
+msbuild AOP.sln
+pause

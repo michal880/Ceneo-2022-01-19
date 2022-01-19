@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "BadExample1";
+}
+
+<h2>BadExample1</h2>
+@if (Request.IsAuthenticated)
+{
+  <h2>Current user is authenticated</h2>
+}
+else
+{
+  <h2>Current user is NOT authenticated</h2>
+}

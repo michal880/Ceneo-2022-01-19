@@ -1,0 +1,47 @@
+﻿@model IEnumerable<AspMvcSec.Models.Comment>
+@{
+  ViewBag.Title = "Home Page";
+}
+
+<h1>Latest comments</h1>
+
+<div class="row">
+  <table class="table table-bordered">
+    @foreach (var item in Model)
+    {
+      <tr>
+        <td>
+          <div class="form-group">
+            <label class="col-md-1 control-label">Who</label>
+            <div class="col-md-11">
+              <div class="form-control">
+                @item.Who
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-1 control-label">Date</label>
+            <div class="col-md-11">
+              <div class="form-control">
+                @item.Date.ToString()
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-1 control-label">Text</label>
+            <div class="col-md-11">
+              <div class="form-control">
+                @Html.Raw(item.Text)
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    }
+  </table>
+</div>
+
+@Html.Action("CreateComment")
+

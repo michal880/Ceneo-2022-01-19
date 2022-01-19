@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.ValueObjects", "DDD.ValueObjects\DDD.ValueObjects.csproj", "{22E72305-9086-42CC-840E-F45BC16ED877}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.DomainEvents", "DDD.DomainEvents\DDD.DomainEvents.csproj", "{11596B3B-CFE2-4705-B7B0-98E7E7DAD600}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Policy", "DDD.Policy\DDD.Policy.csproj", "{BC800E27-3512-4B7A-9217-1291CDC0A47A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Sagas", "DDD.Sagas\DDD.Sagas.csproj", "{024990BE-6CD0-45FB-B348-3AE8126DF69A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Specification", "DDD.Specification\DDD.Specification.csproj", "{FB7916C0-0297-4192-845B-A4AF29E11071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Genericrepository.NH", "DDD.Genericrepository.NH\DDD.Genericrepository.NH.csproj", "{F61D6F56-D8E7-4A01-932F-26235CA245AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Genericrepository.EF", "DDD.Genericrepository.EF\DDD.Genericrepository.EF.csproj", "{B2144F05-2BC6-43E0-BF53-1A3FD2626D87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22E72305-9086-42CC-840E-F45BC16ED877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22E72305-9086-42CC-840E-F45BC16ED877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22E72305-9086-42CC-840E-F45BC16ED877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22E72305-9086-42CC-840E-F45BC16ED877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11596B3B-CFE2-4705-B7B0-98E7E7DAD600}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11596B3B-CFE2-4705-B7B0-98E7E7DAD600}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11596B3B-CFE2-4705-B7B0-98E7E7DAD600}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11596B3B-CFE2-4705-B7B0-98E7E7DAD600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC800E27-3512-4B7A-9217-1291CDC0A47A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC800E27-3512-4B7A-9217-1291CDC0A47A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC800E27-3512-4B7A-9217-1291CDC0A47A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC800E27-3512-4B7A-9217-1291CDC0A47A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{024990BE-6CD0-45FB-B348-3AE8126DF69A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024990BE-6CD0-45FB-B348-3AE8126DF69A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024990BE-6CD0-45FB-B348-3AE8126DF69A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024990BE-6CD0-45FB-B348-3AE8126DF69A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB7916C0-0297-4192-845B-A4AF29E11071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB7916C0-0297-4192-845B-A4AF29E11071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB7916C0-0297-4192-845B-A4AF29E11071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB7916C0-0297-4192-845B-A4AF29E11071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F61D6F56-D8E7-4A01-932F-26235CA245AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F61D6F56-D8E7-4A01-932F-26235CA245AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61D6F56-D8E7-4A01-932F-26235CA245AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F61D6F56-D8E7-4A01-932F-26235CA245AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2144F05-2BC6-43E0-BF53-1A3FD2626D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2144F05-2BC6-43E0-BF53-1A3FD2626D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2144F05-2BC6-43E0-BF53-1A3FD2626D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2144F05-2BC6-43E0-BF53-1A3FD2626D87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FBC21B0-17B7-49F5-AE48-3AD1CECA17F7}
+	EndGlobalSection
+EndGlobal

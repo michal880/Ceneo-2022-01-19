@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "BadExample2";
+}
+@Model IPrincipal
+
+<h2>BadExample2</h2>
+
+@if (Model.Identity.IsAuthenticated)
+{
+  <h2>Current user is authenticated</h2>
+}
+else
+{
+  <h2>Current user is NOT authenticated</h2>
+}

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+
+    function addUser(e) {
+      e.preventDefault();
+
+      $.ajax({
+        type: "POST",
+        url: "http://localhost:50297/Users/Create",
+        data: {
+          Name: "Crazy Dave",
+          Login: "CrazyDave",
+          Email: "test@test.com",
+          Description: "testDescription"
+        },
+        success: function () { }
+      });
+    }
+  </script>
+
+  <h1>Click on the link to get rich now:</h1>
+
+  <h1>
+    <a href="#" id="link">Click here !!! No doubt </a>
+  </h1>
+
+  <h1>You'll be rich for the whole life!</h1>
+  <script type="text/javascript">
+    $('#link').click(addUser);
+  </script>
+</body>
+</html>

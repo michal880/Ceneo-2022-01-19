@@ -1,0 +1,11 @@
+﻿@using All_In_One.Features.ClientCreate
+@using All_In_One.Features.ClientList
+@using Microsoft.Web.Mvc
+@{
+    @*ViewBag.Title = "Home Page";*@
+}
+
+<h2>Home</h2>
+
+@(Html.ActionLink<ClientCreateController>(f => f.New(), "Add client wizard",new { @class ="btn btn-default"}))
+@(Html.ActionLink<ClientListController>(f => f.Index(), "Client list", new { @class = "btn btn-default" }))

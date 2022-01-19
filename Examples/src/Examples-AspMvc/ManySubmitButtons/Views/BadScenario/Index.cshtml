@@ -1,0 +1,30 @@
+﻿@using ManySubmitButtons.Controllers
+@model ManySubmitButtons.Models.AddressModel
+
+@{
+  ViewBag.Title = "Index";
+}
+
+<h2>Create address</h2>
+
+<div class="row">
+  <div class="col-md-8">
+    <form method="POST">
+      <div class="form-group">
+        @Html.LabelFor(f => f.Line1, "Line")
+        @Html.TextBoxFor(f => f.Line1)
+      </div>
+      <div class="form-group">
+        @Html.LabelFor(f => f.Line2, "Line")
+        @Html.TextBoxFor(f => f.Line2)
+      </div>
+      <div class="form-group">
+        @Html.LabelFor(f => f.ZipCode, "ZipCode")
+        @Html.TextBoxFor(f => f.ZipCode)
+        @Html.TextBoxFor(f => f.Locality)
+      </div>
+      <button name="submit" value="Ok" type="submit" class="btn btn-default">Ok</button>
+      <button name="submit" value="Cancel" type="submit" class="btn btn-default">Cancel</button>
+    </form>
+  </div>
+</div>

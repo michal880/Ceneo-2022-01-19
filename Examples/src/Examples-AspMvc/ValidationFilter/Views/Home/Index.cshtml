@@ -1,0 +1,22 @@
+﻿@using Microsoft.Web.Mvc
+@using ValidationFilter.Controllers
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Clients</h2>
+
+<table class="table table-bordered table-striped">
+  @{ int i = 1; }
+  @foreach (var client in Model.Clients)
+  {
+    <tr>
+      <td>@i</td>
+      <td>@client.Name</td>
+    </tr>
+    i++; 
+  }
+</table>
+
+@(Html.ActionLink<ClientCreateNormalController>(f => f.New(), "New client (normal scenario)",new { @class = "btn btn-default"}))
+@(Html.ActionLink<ClientCreateValidationFilterController>(f => f.New(), "New client (ValidationFilter scenario)", new { @class = "btn btn-default" }))

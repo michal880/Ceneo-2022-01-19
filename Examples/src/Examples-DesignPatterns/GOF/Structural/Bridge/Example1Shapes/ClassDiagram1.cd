@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BridgeDesignPattern.Circle" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAIAAQAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Example1Shapes\Circle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BridgeDesignPattern.AsciiDriver" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Example1Shapes\AsciiDriver.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BridgeDesignPattern.HdPixelDriver" Collapsed="true">
+    <Position X="4.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Example1Shapes\HdPixelDriver.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BridgeDesignPattern.MyLogo" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAQAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Example1Shapes\MyLogo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BridgeDesignPattern.New3DDriver" Collapsed="true">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Example1Shapes\New3DDriver.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BridgeDesignPattern.Squre" Collapsed="true">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAASAAgAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Example1Shapes\Squre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BridgeDesignPattern.Shape">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Example1Shapes\Shape.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DrawingApi" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="BridgeDesignPattern.IDrawingApi" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Example1Shapes\IDrawingApi.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="8.86" />
+</ClassDiagram>

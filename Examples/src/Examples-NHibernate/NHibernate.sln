@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.Base", "NHibernate.Base\NHibernate.Base.csproj", "{7BEC0664-FF45-4A5F-935F-B6E850C2479C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.Mapping", "NHibernate.Mapping\NHibernate.Mapping.csproj", "{A0768847-7079-41D2-BF70-ED8F97C39F83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.Locking", "NHibernate.Locking\NHibernate.Locking.csproj", "{F7C1E441-7584-42E6-8605-72A887B742E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.Auditing", "NHibernate.Auditing\NHibernate.Auditing.csproj", "{A0CDDC50-2692-4A0A-B315-1AF937E160E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.MappingOneToOne", "NHibernate.MappingOneToOne\NHibernate.MappingOneToOne.csproj", "{3E8127B9-9A26-4EF3-8593-A51F48267A9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.DependencyInjection", "NHibernate.DependencyInjection\NHibernate.DependencyInjection.csproj", "{B41D0E6E-75A8-4A68-90A8-25BA675B19EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BEC0664-FF45-4A5F-935F-B6E850C2479C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BEC0664-FF45-4A5F-935F-B6E850C2479C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BEC0664-FF45-4A5F-935F-B6E850C2479C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BEC0664-FF45-4A5F-935F-B6E850C2479C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0768847-7079-41D2-BF70-ED8F97C39F83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0768847-7079-41D2-BF70-ED8F97C39F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0768847-7079-41D2-BF70-ED8F97C39F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0768847-7079-41D2-BF70-ED8F97C39F83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7C1E441-7584-42E6-8605-72A887B742E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7C1E441-7584-42E6-8605-72A887B742E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7C1E441-7584-42E6-8605-72A887B742E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7C1E441-7584-42E6-8605-72A887B742E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0CDDC50-2692-4A0A-B315-1AF937E160E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0CDDC50-2692-4A0A-B315-1AF937E160E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0CDDC50-2692-4A0A-B315-1AF937E160E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0CDDC50-2692-4A0A-B315-1AF937E160E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E8127B9-9A26-4EF3-8593-A51F48267A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E8127B9-9A26-4EF3-8593-A51F48267A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E8127B9-9A26-4EF3-8593-A51F48267A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E8127B9-9A26-4EF3-8593-A51F48267A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B41D0E6E-75A8-4A68-90A8-25BA675B19EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B41D0E6E-75A8-4A68-90A8-25BA675B19EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B41D0E6E-75A8-4A68-90A8-25BA675B19EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B41D0E6E-75A8-4A68-90A8-25BA675B19EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6C466F5-F21A-4AF0-B261-DA201E10B988}
+	EndGlobalSection
+EndGlobal

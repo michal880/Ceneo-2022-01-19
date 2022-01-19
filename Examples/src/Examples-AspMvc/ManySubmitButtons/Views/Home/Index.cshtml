@@ -1,0 +1,10 @@
+﻿@using ManySubmitButtons.Controllers
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Home</h2>
+
+<p>@(Html.ActionLink<BadScenarioController>(f => f.Index(), "Bad scenario"))</p>
+<p>@(Html.ActionLink<GoodScenarioController>(f=> f.Index(),"Good scenario"))</p>
